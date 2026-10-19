@@ -1,5 +1,4 @@
-```html
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -67,7 +66,9 @@
                 Let's Connect
                 <i class="fa-solid fa-arrow-up-right-from-square"></i>
             </a> --->
-
+         <button class="theme-toggle" type="button" aria-label="Switch to light theme" title="Switch theme">
+          <i class="fa-solid fa-sun" aria-hidden="true"></i>
+        </button>
         <button class="menu-toggle" aria-label="Open navigation">
           <i class="fa-solid fa-bars"></i>
         </button>
@@ -90,22 +91,18 @@
 
                     </div> -->
 
-            <p class="hero-small-title">B.Tech (Hons.) Data Science</p>
+            <!-- <p class="hero-small-title">B.Tech (Hons.) Data Science</p> -->
 
             <h1>
-              Turning
-              <span class="gradient-text">Data</span>
-
-              into
-
-              <span class="gradient-text">Impact.</span>
+              Hello, I'm <span class="gradient-text">Robindeep Kaur</span>
+             
             </h1>
 
             <p class="hero-description">
-              I'm <strong>Robindeep Kaur</strong>, a Data Science student,
-              aspiring Data Analyst and developer who enjoys transforming raw
-              data into meaningful insights and building intelligent digital
-              solutions.
+              I'm B.Tech (Hons.) Data Science student with a passion for Data Analytics,
+              Machine Learning, and Full Stack Web Development. I enjoy
+              transforming complex problems into practical solutions through
+              data-driven insights and innovative applications.
             </p>
 
             <!-- HERO BUTTONS -->
@@ -244,7 +241,7 @@
 
               <p>
                 I'm a B.Tech (Hons.) Data Science student with a strong interest
-                in Data Analytics, Business Intelligence, Machine Learning and
+                in Data Science, Business Intelligence, Machine Learning and
                 Full Stack Web Development.
               </p>
 
@@ -267,9 +264,9 @@
                 </div>
 
                 <div>
-                  <h4>Data Analytics</h4>
+                  <h4>Data Science</h4>
 
-                  <p>Finding patterns and insights hidden inside data.</p>
+                  <p>Finding meaningful patterns and turning data into useful insights.</p>
                 </div>
               </div>
 
@@ -291,9 +288,9 @@
                 </div>
 
                 <div>
-                  <h4>Development</h4>
+                  <h4>Web Development</h4>
 
-                  <p>Creating responsive and practical web applications.</p>
+                  <p>Creating practical, user-friendly, and responsive web experiences.</p>
                 </div>
               </div>
             </div>
@@ -307,7 +304,7 @@
         <div class="section-container">
           <div class="stats-grid">
             <div class="stat-item">
-              <span class="stat-number">9.20</span>
+              <span class="stat-number">9.03</span>
 
               <span class="stat-label">CGPA</span>
             </div>
@@ -561,6 +558,10 @@
                   <i class="fa-solid fa-cloud"></i>
                   Google Colab
                 </span>
+                <span>
+                  <i class="fa-solid fa-chart-bar"></i>
+                  Power BI 
+                </span>
               </div>
             </div>
           </div>
@@ -584,266 +585,290 @@
             </div>
 
             <p class="section-description">
-              A collection of projects where data, development and
-              problem-solving come together.
+              <!-- A collection of projects where data, development and
+              problem-solving come together. -->
             </p>
           </div>
 
           <div class="projects-grid">
             <!-- PROJECT 1 -->
 
-            <article class="project-card featured-project">
-              <div class="project-visual project-ai">
-                <div class="project-label">AI / DEEP LEARNING</div>
+<!-- PROJECT 1: SPAM SMS CLASSIFIER -->
 
-                <div class="project-visual-icon">
-                  <i class="fa-solid fa-image"></i>
-                </div>
+<article class="project-card featured-project">
+  <div class="project-visual project-ml">
+    <div class="project-label">MACHINE LEARNING / NLP</div>
 
-                <div class="visual-grid"></div>
-              </div>
+    <div class="project-visual-icon">
+      <i class="fa-solid fa-shield-halved"></i>
+    </div>
 
-              <div class="project-info">
-                <div class="project-meta">
-                  <span>01</span>
-                  <span>Deep Learning</span>
-                </div>
+    <div class="visual-grid"></div>
+  </div>
 
-                <h3>Image Captioning using Deep Learning</h3>
+  <div class="project-info">
+    <div class="project-meta">
+      <span>01</span>
+      <span>Machine Learning</span>
+    </div>
 
-                <p>
-                  A computer vision and NLP based system that automatically
-                  generates meaningful captions for images using CNN and LSTM
-                  architecture.
-                </p>
+    <h3>Spam SMS Classifier</h3>
 
-                <div class="project-tags">
-                  <span>Python</span>
-                  <span>TensorFlow</span>
-                  <span>ResNet50</span>
-                  <span>LSTM</span>
-                  <span>NLP</span>
-                </div>
+    <p>
+      A machine learning application that classifies SMS messages
+      as spam or legitimate using text preprocessing, TF-IDF
+      feature extraction, and classification algorithms.
+    </p>
 
-                <a href="#" class="project-link">
-                  View Project
+    <div class="project-tags">
+      <span>Python</span>
+      <span>Scikit-learn</span>
+      <span>NLTK</span>
+      <span>TF-IDF</span>
+      <span>Machine Learning</span>
+    </div>
 
-                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                </a>
-              </div>
-            </article>
+    <a href="https://github.com/robinchahal082-sudo/spam_sms_classifier"
+       target="_blank"
+       rel="noopener noreferrer"
+       class="project-link">
+      View Project
+      <i class="fa-solid fa-arrow-up-right-from-square"></i>
+    </a>
+  </div>
+</article>
 
-            <!-- PROJECT 2 -->
 
-            <article class="project-card">
-              <div class="project-visual project-web">
-                <div class="project-label">WEB APPLICATION</div>
+<!-- PROJECT 2: CUSTOMER SHOPPING BEHAVIOR ANALYSIS -->
 
-                <div class="project-visual-icon">
-                  <i class="fa-solid fa-users-gear"></i>
-                </div>
+<article class="project-card">
+  <div class="project-visual project-data">
+    <div class="project-label">DATA SCIENCE / ANALYTICS</div>
 
-                <div class="visual-grid"></div>
-              </div>
+    <div class="project-visual-icon">
+      <i class="fa-solid fa-cart-shopping"></i>
+    </div>
 
-              <div class="project-info">
-                <div class="project-meta">
-                  <span>02</span>
-                  <span>Full Stack</span>
-                </div>
+    <div class="visual-grid"></div>
+  </div>
 
-                <h3>Club Management System</h3>
+  <div class="project-info">
+    <div class="project-meta">
+      <span>02</span>
+      <span>Data Analysis</span>
+    </div>
 
-                <p>
-                  Role-based web application for managing university clubs,
-                  members, events, approvals and communication.
-                </p>
+    <h3>Customer Shopping Behavior Analysis</h3>
 
-                <div class="project-tags">
-                  <span>HTML</span>
-                  <span>CSS</span>
-                  <span>JavaScript</span>
-                  <span>PHP</span>
-                  <span>MySQL</span>
-                </div>
+    <p>
+      A data analysis project that explores customer purchasing
+      patterns and shopping trends using Python, SQL, and Power BI
+      to derive meaningful insights from retail data.
+    </p>
 
-                <a
-                  href="https://github.com/robinchahal082-sudo/smart_club_management_system"
-                  target="_blank"
-                  class="project-link"
-                >
-                  GitHub Repository
+    <div class="project-tags">
+      <span>Python</span>
+      <span>Pandas</span>
+      <span>SQL</span>
+      <span>Power BI</span>
+      <span>Data Visualization</span>
+    </div>
 
-                  <i class="fa-brands fa-github"></i>
-                </a>
-              </div>
-            </article>
+    <a href="https://github.com/robinchahal082-sudo/customer_shopping_behavior_analysis"
+       target="_blank"
+       rel="noopener noreferrer"
+       class="project-link">
+      View Project
+      <i class="fa-solid fa-arrow-up-right-from-square"></i>
+    </a>
+  </div>
+</article>
 
-            <!-- PROJECT 3 -->
 
-            <article class="project-card">
-              <div class="project-visual project-docker">
-                <div class="project-label">DEVOPS</div>
+<!-- PROJECT 3: SMART CLUB MANAGEMENT SYSTEM -->
 
-                <div class="project-visual-icon">
-                  <i class="fa-brands fa-docker"></i>
-                </div>
+<article class="project-card">
+  <div class="project-visual project-web">
+    <div class="project-label">FULL-STACK WEB DEVELOPMENT</div>
 
-                <div class="visual-grid"></div>
-              </div>
+    <div class="project-visual-icon">
+      <i class="fa-solid fa-people-group"></i>
+    </div>
 
-              <div class="project-info">
-                <div class="project-meta">
-                  <span>03</span>
-                  <span>Deployment</span>
-                </div>
+    <div class="visual-grid"></div>
+  </div>
 
-                <h3>Docker Expense Tracker</h3>
+  <div class="project-info">
+    <div class="project-meta">
+      <span>03</span>
+      <span>Web Development</span>
+    </div>
 
-                <p>
-                  A containerized expense tracking application designed for
-                  efficient deployment and scalable workflows.
-                </p>
+    <h3>Smart Club Management System</h3>
 
-                <div class="project-tags">
-                  <span>Docker</span>
-                  <span>PHP</span>
-                  <span>MySQL</span>
-                  <span>Linux</span>
-                </div>
+    <p>
+      A university club management platform designed to manage
+      clubs, members, events, event approval workflows, announcements,
+      and communication between students and club coordinators.
+    </p>
 
-                <a href="#" class="project-link">
-                  View Project
+    <div class="project-tags">
+      <span>HTML</span>
+      <span>CSS</span>
+      <span>JavaScript</span>
+      <span>PHP</span>
+      <span>MySQL</span>
+    </div>
 
-                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                </a>
-              </div>
-            </article>
+    <a href="https://github.com/robinchahal082-sudo/smart_club_management_system"
+       target="_blank"
+       rel="noopener noreferrer"
+       class="project-link">
+      View Project
+      <i class="fa-solid fa-arrow-up-right-from-square"></i>
+    </a>
+  </div>
+</article>
 
-            <!-- PROJECT 4 -->
 
-            <article class="project-card">
-              <div class="project-visual project-excel">
-                <div class="project-label">DATA ANALYTICS</div>
+<!-- PROJECT 4: RESUMECRAFT -->
 
-                <div class="project-visual-icon">
-                  <i class="fa-solid fa-chart-column"></i>
-                </div>
+<article class="project-card featured-project">
+  <div class="project-visual project-resume">
+    <div class="project-label">WEB APPLICATION</div>
 
-                <div class="visual-grid"></div>
-              </div>
+    <div class="project-visual-icon">
+      <i class="fa-solid fa-file-lines"></i>
+    </div>
 
-              <div class="project-info">
-                <div class="project-meta">
-                  <span>04</span>
-                  <span>Excel</span>
-                </div>
+    <div class="visual-grid"></div>
+  </div>
 
-                <h3>Sales Dashboard</h3>
+  <div class="project-info">
+    <div class="project-meta">
+      <span>04</span>
+      <span>Web Development</span>
+    </div>
 
-                <p>
-                  Interactive sales dashboard using Pivot Tables and charts to
-                  track KPIs and generate business insights.
-                </p>
+    <h3>ResumeCraft — Student Resume Builder</h3>
 
-                <div class="project-tags">
-                  <span>Excel</span>
-                  <span>Pivot Tables</span>
-                  <span>Charts</span>
-                  <span>Data Analysis</span>
-                </div>
+    <p>
+      A student-focused resume builder that helps users create
+      professional resumes using customizable templates, structured
+      resume sections, and PDF export functionality.
+    </p>
 
-                <a href="#" class="project-link">
-                  View Project
+    <div class="project-tags">
+      <span>HTML</span>
+      <span>CSS</span>
+      <span>JavaScript</span>
+      <span>Resume Templates</span>
+      <span>PDF Export</span>
+    </div>
 
-                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                </a>
-              </div>
-            </article>
+    <a href="https://github.com/robinchahal082-sudo/ResumeCraft"
+       target="_blank"
+       rel="noopener noreferrer"
+       class="project-link">
+      View Project
+      <i class="fa-solid fa-arrow-up-right-from-square"></i>
+    </a>
+  </div>
+</article>
 
-            <!-- PROJECT 5 -->
 
-            <article class="project-card">
-              <div class="project-visual project-powerbi">
-                <div class="project-label">BUSINESS INTELLIGENCE</div>
+<!-- PROJECT 5: AKAL ALUMNI PORTAL -->
 
-                <div class="project-visual-icon">
-                  <i class="fa-solid fa-chart-pie"></i>
-                </div>
+<article class="project-card">
+  <div class="project-visual project-web">
+    <div class="project-label">FULL-STACK DEVELOPMENT</div>
 
-                <div class="visual-grid"></div>
-              </div>
+    <div class="project-visual-icon">
+      <i class="fa-solid fa-graduation-cap"></i>
+    </div>
 
-              <div class="project-info">
-                <div class="project-meta">
-                  <span>05</span>
-                  <span>Power BI</span>
-                </div>
+    <div class="visual-grid"></div>
+  </div>
 
-                <h3>E-commerce Sales Dashboard</h3>
+  <div class="project-info">
+    <div class="project-meta">
+      <span>05</span>
+      <span>In Progress</span>
+    </div>
 
-                <p>
-                  Interactive Power BI dashboard designed to analyze e-commerce
-                  sales, KPIs and business performance.
-                </p>
+    <h3>Akal Alumni Portal</h3>
 
-                <div class="project-tags">
-                  <span>Power BI</span>
-                  <span>Excel</span>
-                  <span>DAX</span>
-                  <span>Visualization</span>
-                </div>
+    <p>
+      A university alumni portal project focused on creating a
+      centralized platform for alumni information, engagement,
+      and connections within the university community.
+    </p>
 
-                <a href="#" class="project-link">
-                  View Project
+    <div class="project-tags">
+      <span>React</span>
+      <span>Bootstrap 5</span>
+      <span>CodeIgniter 4</span>
+      <span>MySQL</span>
+    </div>
 
-                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                </a>
-              </div>
-            </article>
+    <a href="https://github.com/robinchahal082-sudo"
+       target="_blank"
+       rel="noopener noreferrer"
+       class="project-link">
+      View on GitHub
+      <i class="fa-solid fa-arrow-up-right-from-square"></i>
+    </a>
+  </div>
+</article>
 
-            <!-- PROJECT 6 -->
 
-            <article class="project-card">
-              <div class="project-visual project-cv">
-                <div class="project-label">COMPUTER VISION</div>
+<article class="project-card">
+  <div class="project-visual project-ai">
+    <div class="project-label">ARTIFICIAL INTELLIGENCE</div>
 
-                <div class="project-visual-icon">
-                  <i class="fa-solid fa-face-smile"></i>
-                </div>
+    <div class="project-visual-icon">
+      <i class="fa-solid fa-file-medical"></i>
+    </div>
 
-                <div class="visual-grid"></div>
-              </div>
+    <div class="visual-grid"></div>
+  </div>
 
-              <div class="project-info">
-                <div class="project-meta">
-                  <span>06</span>
-                  <span>Machine Learning</span>
-                </div>
+  <div class="project-info">
+    <div class="project-meta">
+      <span>06</span>
+      <span>In Progress</span>
+    </div>
 
-                <h3>Spam SMS Classifier</h3>
+    <h3>MedSeg-RAG</h3>
 
-                <p>
-                   Machine learning based SMS classification system that detects whether
-      a message is Spam or Ham using TF-IDF feature extraction and multiple
-      classification algorithms.
-                </p>
+    <p>
+      An AI-powered medical document assistant that uses
+      structure-aware segmentation and Retrieval-Augmented
+      Generation (RAG) to retrieve relevant information and
+      answer natural-language queries with source citations.
+    </p>
 
-                <div class="project-tags">
-                  <span>Python</span>
-                  <span>Scikit-learn</span>
-                  <span>TF-IDF</span>
-                </div>
+    <div class="project-tags">
+      <span>Python</span>
+      <span>NLP</span>
+      <span>FAISS</span>
+      <span>Sentence Transformers</span>
+      <span>Ollama</span>
+      <span>Streamlit</span>
+    </div>
 
-                <a href="https://github.com/robinchahal082-sudo/spam_sms_classifier"" class="project-link">
-GitHub Repository
-                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                </a>
-              </div>
-            </article>
-          </div>
-        </div>
-      </section>
+    <a href="https://github.com/robinchahal082-sudo"
+       target="_blank"
+       rel="noopener noreferrer"
+       class="project-link">
+      View on GitHub
+      <i class="fa-solid fa-arrow-up-right-from-square"></i>
+    </a>
+  </div>
+</article>
+          </div> <!-- /.projects-grid -->
+        </div> <!-- /.section-container -->
+      </section> <!-- /#projects -->
 
       <!-- =====================================================
              EXPERIENCE
@@ -1226,4 +1251,3 @@ GitHub Repository
     <script src="script.js" defer></script>
   </body>
 </html>
-```
