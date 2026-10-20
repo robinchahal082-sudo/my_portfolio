@@ -1068,35 +1068,55 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
-    /* Theme toggle: persist the visitor's preference */
-    const themeToggle = document.querySelector(".theme-toggle");
-    const themeIcon = themeToggle ? themeToggle.querySelector("i") : null;
-    const savedTheme = (() => {
-        try { return localStorage.getItem("portfolio-theme"); }
-        catch (error) { return null; }
-    })();
-    const preferredTheme = savedTheme || "light";
+    // /* Theme toggle: persist the visitor's preference */
+    // const themeToggle = document.querySelector(".theme-toggle");
+    // const themeIcon = themeToggle ? themeToggle.querySelector("i") : null;
+    // const savedTheme = (() => {
+    //     try { return localStorage.getItem("portfolio-theme"); }
+    //     catch (error) { return null; }
+    // })();
+    // const preferredTheme = savedTheme || "light";
 
-    function applyTheme(theme) {
-        document.documentElement.setAttribute("data-theme", theme);
-        if (themeIcon && themeToggle) {
-            const isDark = theme === "dark";
-            themeIcon.classList.toggle("fa-moon", isDark);
-            themeIcon.classList.toggle("fa-sun", !isDark);
-            themeToggle.setAttribute("aria-label", isDark ? "Switch to light theme" : "Switch to dark theme");
-            themeToggle.setAttribute("title", isDark ? "Switch to light theme" : "Switch to dark theme");
-        }
-        const themeColor = document.querySelector('meta[name="theme-color"]');
-        if (themeColor) themeColor.setAttribute("content", theme === "dark" ? "#090b12" : "#f7f8fc");
+    // function applyTheme(theme) {
+    //     document.documentElement.setAttribute("data-theme", theme);
+    //     if (themeIcon && themeToggle) {
+    //         const isDark = theme === "dark";
+    //         themeIcon.classList.toggle("fa-moon", isDark);
+    //         themeIcon.classList.toggle("fa-sun", !isDark);
+    //         themeToggle.setAttribute("aria-label", isDark ? "Switch to light theme" : "Switch to dark theme");
+    //         themeToggle.setAttribute("title", isDark ? "Switch to light theme" : "Switch to dark theme");
+    //     }
+    //     const themeColor = document.querySelector('meta[name="theme-color"]');
+    //     if (themeColor) themeColor.setAttribute("content", theme === "dark" ? "#090b12" : "#f7f8fc");
+    // }
+
+    // applyTheme(preferredTheme);
+    // if (themeToggle) {
+    //     themeToggle.addEventListener("click", () => {
+    //         const nextTheme = document.documentElement.getAttribute("data-theme") === "dark" ? "light" : "dark";
+    //         applyTheme(nextTheme);
+    //         try { localStorage.setItem("portfolio-theme", nextTheme); } catch (error) {}
+    //     });
+    // }
+     
+    /* Dark theme only */
+    const themeToggle = document.querySelector(".theme-toggle");
+
+    if (themeToggle) {
+        themeToggle.remove();
     }
 
-    applyTheme(preferredTheme);
-    if (themeToggle) {
-        themeToggle.addEventListener("click", () => {
-            const nextTheme = document.documentElement.getAttribute("data-theme") === "dark" ? "light" : "dark";
-            applyTheme(nextTheme);
-            try { localStorage.setItem("portfolio-theme", nextTheme); } catch (error) {}
-        });
+    document.documentElement.setAttribute("data-theme", "dark");
+
+    try {
+        localStorage.setItem("portfolio-theme", "dark");
+    } catch (error) {
+        // Continue even if local storage is unavailable
+    }
+
+    const themeColor = document.querySelector('meta[name="theme-color"]');
+    if (themeColor) {
+        themeColor.setAttribute("content", "#090b12");
     }
 
 });
